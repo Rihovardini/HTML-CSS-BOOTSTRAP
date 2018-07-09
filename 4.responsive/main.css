@@ -1,0 +1,78 @@
+header{
+  background:linear-gradient(darkorchid 0%,salmon 100%);
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1{
+ padding: 30px;
+ position: relative;    
+}
+h1:before{
+    content:url(http://advcloudfiles.advantech.com/web/Images/common/icon-header-nav.png);
+    position: absolute;
+    top: 27px;
+    left: 1px;
+    display: none;
+}
+
+h1:after{
+    content:url(http://advcloudfiles.advantech.com/web/Images/common/icon-header-nav.png);
+    position: absolute;
+    bottom: 25px;
+    right:1px;
+    display: none;
+}
+
+
+.clear{
+    clear: both;
+}
+
+main{
+    display: flex;
+}
+
+main div{
+    width:20%;
+    padding: 40px 10px;
+    background-color: aqua;
+}
+main div:nth-child(2){
+  flex:2;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    main div:last-child{
+        display: none;
+    }
+
+    h1:before{
+        display:block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: forestgreen;
+    }
+
+    main div{
+        width: 100%;
+    }
+
+    main div:last-child,main div:nth-child(2){
+        display: none;
+    }
+
+    h1:after{
+        display:block;
+    }
+}
