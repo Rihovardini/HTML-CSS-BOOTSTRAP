@@ -159,6 +159,14 @@
     background-color: cyan;
 }
 
+.footer-blocks-left h3,.footer-blocks-right h3 {
+    padding-top: 60px;
+}
+
+.footer-blocks-center h3{
+    padding-top: 130px;
+}
+
 /*Lastone*/
 
 .lastone{
@@ -178,4 +186,8 @@
     width:210px;
     height: 150px;
     background-color: blue;
+}
+
+.lastone div h3{
+    margin-top: 65px;
 }
