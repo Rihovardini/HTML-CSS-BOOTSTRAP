@@ -26,10 +26,6 @@ h1:after{
 }
 
 
-.clear{
-    clear: both;
-}
-
 main{
     display: flex;
 }
@@ -38,6 +34,7 @@ main div{
     width:20%;
     padding: 40px 10px;
     background-color: aqua;
+    height: 300px;
 }
 main div:nth-child(2){
   flex:2;
@@ -59,7 +56,7 @@ main div:nth-child(2){
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 576px) {
     body {
         background-color: forestgreen;
     }
