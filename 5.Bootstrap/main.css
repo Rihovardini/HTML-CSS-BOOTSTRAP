@@ -19,4 +19,8 @@
     .sidebar{
         display: none;
     }
+    
+    .hero-f{
+        display:none;
+    }
 }
