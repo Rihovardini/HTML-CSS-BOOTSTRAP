@@ -1,3 +1,12 @@
-header{
-    background-color: #24292e;
+.july{
+    position: relative;
+}
+.july2018:after{
+    content: '';
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 12px;
+    left: 86px;
+    width: 84%;
 }

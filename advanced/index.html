@@ -1,35 +1,728 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">       
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-</head>
-<body>
-    <nav class="black">
-      <div class="container">
-        <div class="nav-wrapper row">
-          <div class="logo col s2">
-            <a href="#" class="brand-logo"><img src="https://static.filehorse.com/icons-web/developer-tools/github-icon-32.png" alt=""> </a>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <title>Hello, world!</title>
+      </head>
+      <body>
+          <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <div class="container">
+                <a class="navbar-brand" href="#"><img src="https://static.filehorse.com/icons-web/developer-tools/github-icon-32.png" alt=""></a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Pull request</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Issues</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Explore</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><img style='height: 25px;width: 25px;'src="https://png.icons8.com/windows/1600/jingle-bell.png" alt=""></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img style='height: 25px;width: 25px;'src="https://png.icons8.com/windows/1600/jingle-bell.png" alt="">
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img style='height: 20px;width: 20px;'src="https://avatars1.githubusercontent.com/u/36852258?s=40&v=4" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <main class="mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <div class="account-inf">
+                      <img alt="" width="230" height="230" class="avatar rounded" src="https://avatars0.githubusercontent.com/u/18013879?s=460&amp;v=4">
+                    <h3>AndrewTi</h3>
+                    <h4 class="text-muted">AndrewTi</h4>
+                    <h6 class="text-muted">email: andreytyndyk@gmail.com</h6>
+                    <button type="button" class="btn btn-secondary btn-lg" style='width: 230px;' disabled>Button</button>
+                    <div class="pt-3">
+                      <a href="#" class="btn-link text-small" rel="facebox">
+                          Block or report user
+                      </a>
+                    </div> 
+                    <hr>
+                    <div class="account-details">
+                        <a style="display:block" href="#">@TinsaSoft</a>
+                        <span>Ukraine,Lviv</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                      <div class="navList">    
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Repositories <span class="badge badge-light">38</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Stars <span class="badge badge-light">19</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Followers <span class="badge badge-light">30</span></a>
+                            </li>
+                        </ul>
+                      </div>  
+                    <hr>
+                    <h6 class="text-muted">Pinned repositories</h6>
+                    <div class="pinned-repos row pl-3 justify-content-between">
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3">
+                          <a href="#">Timer</a>
+                          <div>JavaScript</div>
+                        </div>
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3">
+                            <a href="#">Timer</a>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3 mt-3">
+                            <a href="#">Timer</a>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3 mt-3">
+                            <a href="#">Timer</a>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3 mt-3">
+                            <a href="#">Timer</a>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="pinned-blocks col-5 border border-dark rounded p-3 mt-3">
+                            <a href="#">Timer</a>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="contrab mt-4">
+                        <span class="contribution">234 contributions in the last year</span>
+                        <div class="calendar border border-dark">
+                          <svg width="676" height="104" class="js-calendar-graph-svg p-3">
+                            <g transform="translate(16, 20)">
+                                <g transform="translate(0, 0)">
+                                    <rect class="day" width="10" height="10" x="13" y="0" fill="#ebedf0" data-count="0" data-date="2017-07-09"/>
+                                    <rect class="day" width="10" height="10" x="13" y="12" fill="#ebedf0" data-count="0" data-date="2017-07-10"/>
+                                    <rect class="day" width="10" height="10" x="13" y="24" fill="#ebedf0" data-count="0" data-date="2017-07-11"/>
+                                    <rect class="day" width="10" height="10" x="13" y="36" fill="#ebedf0" data-count="0" data-date="2017-07-12"/>
+                                    <rect class="day" width="10" height="10" x="13" y="48" fill="#ebedf0" data-count="0" data-date="2017-07-13"/>
+                                    <rect class="day" width="10" height="10" x="13" y="60" fill="#ebedf0" data-count="0" data-date="2017-07-14"/>
+                                    <rect class="day" width="10" height="10" x="13" y="72" fill="#ebedf0" data-count="0" data-date="2017-07-15"/>
+                                </g>
+                                <g transform="translate(13, 0)">
+                                    <rect class="day" width="10" height="10" x="12" y="0" fill="#ebedf0" data-count="0" data-date="2017-07-16"/>
+                                    <rect class="day" width="10" height="10" x="12" y="12" fill="#ebedf0" data-count="0" data-date="2017-07-17"/>
+                                    <rect class="day" width="10" height="10" x="12" y="24" fill="#ebedf0" data-count="0" data-date="2017-07-18"/>
+                                    <rect class="day" width="10" height="10" x="12" y="36" fill="#ebedf0" data-count="0" data-date="2017-07-19"/>
+                                    <rect class="day" width="10" height="10" x="12" y="48" fill="#ebedf0" data-count="0" data-date="2017-07-20"/>
+                                    <rect class="day" width="10" height="10" x="12" y="60" fill="#ebedf0" data-count="0" data-date="2017-07-21"/>
+                                    <rect class="day" width="10" height="10" x="12" y="72" fill="#ebedf0" data-count="0" data-date="2017-07-22"/>
+                                </g>
+                                <g transform="translate(26, 0)">
+                                    <rect class="day" width="10" height="10" x="11" y="0" fill="#ebedf0" data-count="0" data-date="2017-07-23"/>
+                                    <rect class="day" width="10" height="10" x="11" y="12" fill="#ebedf0" data-count="0" data-date="2017-07-24"/>
+                                    <rect class="day" width="10" height="10" x="11" y="24" fill="#ebedf0" data-count="0" data-date="2017-07-25"/>
+                                    <rect class="day" width="10" height="10" x="11" y="36" fill="#ebedf0" data-count="0" data-date="2017-07-26"/>
+                                    <rect class="day" width="10" height="10" x="11" y="48" fill="#ebedf0" data-count="0" data-date="2017-07-27"/>
+                                    <rect class="day" width="10" height="10" x="11" y="60" fill="#ebedf0" data-count="0" data-date="2017-07-28"/>
+                                    <rect class="day" width="10" height="10" x="11" y="72" fill="#ebedf0" data-count="0" data-date="2017-07-29"/>
+                                </g>
+                                <g transform="translate(39, 0)">
+                                    <rect class="day" width="10" height="10" x="10" y="0" fill="#ebedf0" data-count="0" data-date="2017-07-30"/>
+                                    <rect class="day" width="10" height="10" x="10" y="12" fill="#ebedf0" data-count="0" data-date="2017-07-31"/>
+                                    <rect class="day" width="10" height="10" x="10" y="24" fill="#ebedf0" data-count="0" data-date="2017-08-01"/>
+                                    <rect class="day" width="10" height="10" x="10" y="36" fill="#ebedf0" data-count="0" data-date="2017-08-02"/>
+                                    <rect class="day" width="10" height="10" x="10" y="48" fill="#ebedf0" data-count="0" data-date="2017-08-03"/>
+                                    <rect class="day" width="10" height="10" x="10" y="60" fill="#ebedf0" data-count="0" data-date="2017-08-04"/>
+                                    <rect class="day" width="10" height="10" x="10" y="72" fill="#ebedf0" data-count="0" data-date="2017-08-05"/>
+                                </g>
+                                <g transform="translate(52, 0)">
+                                    <rect class="day" width="10" height="10" x="9" y="0" fill="#ebedf0" data-count="0" data-date="2017-08-06"/>
+                                    <rect class="day" width="10" height="10" x="9" y="12" fill="#ebedf0" data-count="0" data-date="2017-08-07"/>
+                                    <rect class="day" width="10" height="10" x="9" y="24" fill="#ebedf0" data-count="0" data-date="2017-08-08"/>
+                                    <rect class="day" width="10" height="10" x="9" y="36" fill="#ebedf0" data-count="0" data-date="2017-08-09"/>
+                                    <rect class="day" width="10" height="10" x="9" y="48" fill="#ebedf0" data-count="0" data-date="2017-08-10"/>
+                                    <rect class="day" width="10" height="10" x="9" y="60" fill="#ebedf0" data-count="0" data-date="2017-08-11"/>
+                                    <rect class="day" width="10" height="10" x="9" y="72" fill="#ebedf0" data-count="0" data-date="2017-08-12"/>
+                                </g>
+                                <g transform="translate(65, 0)">
+                                    <rect class="day" width="10" height="10" x="8" y="0" fill="#ebedf0" data-count="0" data-date="2017-08-13"/>
+                                    <rect class="day" width="10" height="10" x="8" y="12" fill="#ebedf0" data-count="0" data-date="2017-08-14"/>
+                                    <rect class="day" width="10" height="10" x="8" y="24" fill="#ebedf0" data-count="0" data-date="2017-08-15"/>
+                                    <rect class="day" width="10" height="10" x="8" y="36" fill="#ebedf0" data-count="0" data-date="2017-08-16"/>
+                                    <rect class="day" width="10" height="10" x="8" y="48" fill="#ebedf0" data-count="0" data-date="2017-08-17"/>
+                                    <rect class="day" width="10" height="10" x="8" y="60" fill="#ebedf0" data-count="0" data-date="2017-08-18"/>
+                                    <rect class="day" width="10" height="10" x="8" y="72" fill="#ebedf0" data-count="0" data-date="2017-08-19"/>
+                                </g>
+                                <g transform="translate(78, 0)">
+                                    <rect class="day" width="10" height="10" x="7" y="0" fill="#ebedf0" data-count="0" data-date="2017-08-20"/>
+                                    <rect class="day" width="10" height="10" x="7" y="12" fill="#ebedf0" data-count="0" data-date="2017-08-21"/>
+                                    <rect class="day" width="10" height="10" x="7" y="24" fill="#ebedf0" data-count="0" data-date="2017-08-22"/>
+                                    <rect class="day" width="10" height="10" x="7" y="36" fill="#ebedf0" data-count="0" data-date="2017-08-23"/>
+                                    <rect class="day" width="10" height="10" x="7" y="48" fill="#ebedf0" data-count="0" data-date="2017-08-24"/>
+                                    <rect class="day" width="10" height="10" x="7" y="60" fill="#ebedf0" data-count="0" data-date="2017-08-25"/>
+                                    <rect class="day" width="10" height="10" x="7" y="72" fill="#ebedf0" data-count="0" data-date="2017-08-26"/>
+                                </g>
+                                <g transform="translate(91, 0)">
+                                    <rect class="day" width="10" height="10" x="6" y="0" fill="#ebedf0" data-count="0" data-date="2017-08-27"/>
+                                    <rect class="day" width="10" height="10" x="6" y="12" fill="#ebedf0" data-count="0" data-date="2017-08-28"/>
+                                    <rect class="day" width="10" height="10" x="6" y="24" fill="#ebedf0" data-count="0" data-date="2017-08-29"/>
+                                    <rect class="day" width="10" height="10" x="6" y="36" fill="#ebedf0" data-count="0" data-date="2017-08-30"/>
+                                    <rect class="day" width="10" height="10" x="6" y="48" fill="#ebedf0" data-count="0" data-date="2017-08-31"/>
+                                    <rect class="day" width="10" height="10" x="6" y="60" fill="#ebedf0" data-count="0" data-date="2017-09-01"/>
+                                    <rect class="day" width="10" height="10" x="6" y="72" fill="#ebedf0" data-count="0" data-date="2017-09-02"/>
+                                </g>
+                                <g transform="translate(104, 0)">
+                                    <rect class="day" width="10" height="10" x="5" y="0" fill="#ebedf0" data-count="0" data-date="2017-09-03"/>
+                                    <rect class="day" width="10" height="10" x="5" y="12" fill="#ebedf0" data-count="0" data-date="2017-09-04"/>
+                                    <rect class="day" width="10" height="10" x="5" y="24" fill="#ebedf0" data-count="0" data-date="2017-09-05"/>
+                                    <rect class="day" width="10" height="10" x="5" y="36" fill="#ebedf0" data-count="0" data-date="2017-09-06"/>
+                                    <rect class="day" width="10" height="10" x="5" y="48" fill="#ebedf0" data-count="0" data-date="2017-09-07"/>
+                                    <rect class="day" width="10" height="10" x="5" y="60" fill="#ebedf0" data-count="0" data-date="2017-09-08"/>
+                                    <rect class="day" width="10" height="10" x="5" y="72" fill="#ebedf0" data-count="0" data-date="2017-09-09"/>
+                                </g>
+                                <g transform="translate(117, 0)">
+                                    <rect class="day" width="10" height="10" x="4" y="0" fill="#ebedf0" data-count="0" data-date="2017-09-10"/>
+                                    <rect class="day" width="10" height="10" x="4" y="12" fill="#ebedf0" data-count="0" data-date="2017-09-11"/>
+                                    <rect class="day" width="10" height="10" x="4" y="24" fill="#ebedf0" data-count="0" data-date="2017-09-12"/>
+                                    <rect class="day" width="10" height="10" x="4" y="36" fill="#ebedf0" data-count="0" data-date="2017-09-13"/>
+                                    <rect class="day" width="10" height="10" x="4" y="48" fill="#ebedf0" data-count="0" data-date="2017-09-14"/>
+                                    <rect class="day" width="10" height="10" x="4" y="60" fill="#ebedf0" data-count="0" data-date="2017-09-15"/>
+                                    <rect class="day" width="10" height="10" x="4" y="72" fill="#ebedf0" data-count="0" data-date="2017-09-16"/>
+                                </g>
+                                <g transform="translate(130, 0)">
+                                    <rect class="day" width="10" height="10" x="3" y="0" fill="#ebedf0" data-count="0" data-date="2017-09-17"/>
+                                    <rect class="day" width="10" height="10" x="3" y="12" fill="#ebedf0" data-count="0" data-date="2017-09-18"/>
+                                    <rect class="day" width="10" height="10" x="3" y="24" fill="#ebedf0" data-count="0" data-date="2017-09-19"/>
+                                    <rect class="day" width="10" height="10" x="3" y="36" fill="#ebedf0" data-count="0" data-date="2017-09-20"/>
+                                    <rect class="day" width="10" height="10" x="3" y="48" fill="#ebedf0" data-count="0" data-date="2017-09-21"/>
+                                    <rect class="day" width="10" height="10" x="3" y="60" fill="#ebedf0" data-count="0" data-date="2017-09-22"/>
+                                    <rect class="day" width="10" height="10" x="3" y="72" fill="#ebedf0" data-count="0" data-date="2017-09-23"/>
+                                </g>
+                                <g transform="translate(143, 0)">
+                                    <rect class="day" width="10" height="10" x="2" y="0" fill="#ebedf0" data-count="0" data-date="2017-09-24"/>
+                                    <rect class="day" width="10" height="10" x="2" y="12" fill="#ebedf0" data-count="0" data-date="2017-09-25"/>
+                                    <rect class="day" width="10" height="10" x="2" y="24" fill="#ebedf0" data-count="0" data-date="2017-09-26"/>
+                                    <rect class="day" width="10" height="10" x="2" y="36" fill="#ebedf0" data-count="0" data-date="2017-09-27"/>
+                                    <rect class="day" width="10" height="10" x="2" y="48" fill="#ebedf0" data-count="0" data-date="2017-09-28"/>
+                                    <rect class="day" width="10" height="10" x="2" y="60" fill="#ebedf0" data-count="0" data-date="2017-09-29"/>
+                                    <rect class="day" width="10" height="10" x="2" y="72" fill="#ebedf0" data-count="0" data-date="2017-09-30"/>
+                                </g>
+                                <g transform="translate(156, 0)">
+                                    <rect class="day" width="10" height="10" x="1" y="0" fill="#ebedf0" data-count="0" data-date="2017-10-01"/>
+                                    <rect class="day" width="10" height="10" x="1" y="12" fill="#ebedf0" data-count="0" data-date="2017-10-02"/>
+                                    <rect class="day" width="10" height="10" x="1" y="24" fill="#ebedf0" data-count="0" data-date="2017-10-03"/>
+                                    <rect class="day" width="10" height="10" x="1" y="36" fill="#ebedf0" data-count="0" data-date="2017-10-04"/>
+                                    <rect class="day" width="10" height="10" x="1" y="48" fill="#ebedf0" data-count="0" data-date="2017-10-05"/>
+                                    <rect class="day" width="10" height="10" x="1" y="60" fill="#ebedf0" data-count="0" data-date="2017-10-06"/>
+                                    <rect class="day" width="10" height="10" x="1" y="72" fill="#ebedf0" data-count="0" data-date="2017-10-07"/>
+                                </g>
+                                <g transform="translate(169, 0)">
+                                    <rect class="day" width="10" height="10" x="0" y="0" fill="#ebedf0" data-count="0" data-date="2017-10-08"/>
+                                    <rect class="day" width="10" height="10" x="0" y="12" fill="#ebedf0" data-count="0" data-date="2017-10-09"/>
+                                    <rect class="day" width="10" height="10" x="0" y="24" fill="#ebedf0" data-count="0" data-date="2017-10-10"/>
+                                    <rect class="day" width="10" height="10" x="0" y="36" fill="#ebedf0" data-count="0" data-date="2017-10-11"/>
+                                    <rect class="day" width="10" height="10" x="0" y="48" fill="#ebedf0" data-count="0" data-date="2017-10-12"/>
+                                    <rect class="day" width="10" height="10" x="0" y="60" fill="#ebedf0" data-count="0" data-date="2017-10-13"/>
+                                    <rect class="day" width="10" height="10" x="0" y="72" fill="#ebedf0" data-count="0" data-date="2017-10-14"/>
+                                </g>
+                                <g transform="translate(182, 0)">
+                                    <rect class="day" width="10" height="10" x="-1" y="0" fill="#ebedf0" data-count="0" data-date="2017-10-15"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="12" fill="#ebedf0" data-count="0" data-date="2017-10-16"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="24" fill="#ebedf0" data-count="0" data-date="2017-10-17"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="36" fill="#ebedf0" data-count="0" data-date="2017-10-18"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="48" fill="#ebedf0" data-count="0" data-date="2017-10-19"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="60" fill="#ebedf0" data-count="0" data-date="2017-10-20"/>
+                                    <rect class="day" width="10" height="10" x="-1" y="72" fill="#ebedf0" data-count="0" data-date="2017-10-21"/>
+                                </g>
+                                <g transform="translate(195, 0)">
+                                    <rect class="day" width="10" height="10" x="-2" y="0" fill="#ebedf0" data-count="0" data-date="2017-10-22"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="12" fill="#ebedf0" data-count="0" data-date="2017-10-23"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="24" fill="#ebedf0" data-count="0" data-date="2017-10-24"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="36" fill="#ebedf0" data-count="0" data-date="2017-10-25"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="48" fill="#ebedf0" data-count="0" data-date="2017-10-26"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="60" fill="#ebedf0" data-count="0" data-date="2017-10-27"/>
+                                    <rect class="day" width="10" height="10" x="-2" y="72" fill="#ebedf0" data-count="0" data-date="2017-10-28"/>
+                                </g>
+                                <g transform="translate(208, 0)">
+                                    <rect class="day" width="10" height="10" x="-3" y="0" fill="#ebedf0" data-count="0" data-date="2017-10-29"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="12" fill="#ebedf0" data-count="0" data-date="2017-10-30"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="24" fill="#ebedf0" data-count="0" data-date="2017-10-31"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="36" fill="#ebedf0" data-count="0" data-date="2017-11-01"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="48" fill="#ebedf0" data-count="0" data-date="2017-11-02"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="60" fill="#ebedf0" data-count="0" data-date="2017-11-03"/>
+                                    <rect class="day" width="10" height="10" x="-3" y="72" fill="#ebedf0" data-count="0" data-date="2017-11-04"/>
+                                </g>
+                                <g transform="translate(221, 0)">
+                                    <rect class="day" width="10" height="10" x="-4" y="0" fill="#ebedf0" data-count="0" data-date="2017-11-05"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="12" fill="#ebedf0" data-count="0" data-date="2017-11-06"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="24" fill="#ebedf0" data-count="0" data-date="2017-11-07"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="36" fill="#ebedf0" data-count="0" data-date="2017-11-08"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="48" fill="#ebedf0" data-count="0" data-date="2017-11-09"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="60" fill="#ebedf0" data-count="0" data-date="2017-11-10"/>
+                                    <rect class="day" width="10" height="10" x="-4" y="72" fill="#ebedf0" data-count="0" data-date="2017-11-11"/>
+                                </g>
+                                <g transform="translate(234, 0)">
+                                    <rect class="day" width="10" height="10" x="-5" y="0" fill="#ebedf0" data-count="0" data-date="2017-11-12"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="12" fill="#ebedf0" data-count="0" data-date="2017-11-13"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="24" fill="#ebedf0" data-count="0" data-date="2017-11-14"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="36" fill="#ebedf0" data-count="0" data-date="2017-11-15"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="48" fill="#ebedf0" data-count="0" data-date="2017-11-16"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="60" fill="#ebedf0" data-count="0" data-date="2017-11-17"/>
+                                    <rect class="day" width="10" height="10" x="-5" y="72" fill="#ebedf0" data-count="0" data-date="2017-11-18"/>
+                                </g>
+                                <g transform="translate(247, 0)">
+                                    <rect class="day" width="10" height="10" x="-6" y="0" fill="#ebedf0" data-count="0" data-date="2017-11-19"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="12" fill="#ebedf0" data-count="0" data-date="2017-11-20"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="24" fill="#ebedf0" data-count="0" data-date="2017-11-21"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="36" fill="#ebedf0" data-count="0" data-date="2017-11-22"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="48" fill="#ebedf0" data-count="0" data-date="2017-11-23"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="60" fill="#ebedf0" data-count="0" data-date="2017-11-24"/>
+                                    <rect class="day" width="10" height="10" x="-6" y="72" fill="#ebedf0" data-count="0" data-date="2017-11-25"/>
+                                </g>
+                                <g transform="translate(260, 0)">
+                                    <rect class="day" width="10" height="10" x="-7" y="0" fill="#ebedf0" data-count="0" data-date="2017-11-26"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="12" fill="#ebedf0" data-count="0" data-date="2017-11-27"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="24" fill="#ebedf0" data-count="0" data-date="2017-11-28"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="36" fill="#ebedf0" data-count="0" data-date="2017-11-29"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="48" fill="#ebedf0" data-count="0" data-date="2017-11-30"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="60" fill="#ebedf0" data-count="0" data-date="2017-12-01"/>
+                                    <rect class="day" width="10" height="10" x="-7" y="72" fill="#ebedf0" data-count="0" data-date="2017-12-02"/>
+                                </g>
+                                <g transform="translate(273, 0)">
+                                    <rect class="day" width="10" height="10" x="-8" y="0" fill="#ebedf0" data-count="0" data-date="2017-12-03"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="12" fill="#ebedf0" data-count="0" data-date="2017-12-04"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="24" fill="#ebedf0" data-count="0" data-date="2017-12-05"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="36" fill="#ebedf0" data-count="0" data-date="2017-12-06"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="48" fill="#ebedf0" data-count="0" data-date="2017-12-07"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="60" fill="#ebedf0" data-count="0" data-date="2017-12-08"/>
+                                    <rect class="day" width="10" height="10" x="-8" y="72" fill="#ebedf0" data-count="0" data-date="2017-12-09"/>
+                                </g>
+                                <g transform="translate(286, 0)">
+                                    <rect class="day" width="10" height="10" x="-9" y="0" fill="#ebedf0" data-count="0" data-date="2017-12-10"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="12" fill="#ebedf0" data-count="0" data-date="2017-12-11"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="24" fill="#ebedf0" data-count="0" data-date="2017-12-12"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="36" fill="#ebedf0" data-count="0" data-date="2017-12-13"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="48" fill="#ebedf0" data-count="0" data-date="2017-12-14"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="60" fill="#ebedf0" data-count="0" data-date="2017-12-15"/>
+                                    <rect class="day" width="10" height="10" x="-9" y="72" fill="#ebedf0" data-count="0" data-date="2017-12-16"/>
+                                </g>
+                                <g transform="translate(299, 0)">
+                                    <rect class="day" width="10" height="10" x="-10" y="0" fill="#ebedf0" data-count="0" data-date="2017-12-17"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="12" fill="#ebedf0" data-count="0" data-date="2017-12-18"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="24" fill="#ebedf0" data-count="0" data-date="2017-12-19"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="36" fill="#ebedf0" data-count="0" data-date="2017-12-20"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="48" fill="#ebedf0" data-count="0" data-date="2017-12-21"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="60" fill="#ebedf0" data-count="0" data-date="2017-12-22"/>
+                                    <rect class="day" width="10" height="10" x="-10" y="72" fill="#ebedf0" data-count="0" data-date="2017-12-23"/>
+                                </g>
+                                <g transform="translate(312, 0)">
+                                    <rect class="day" width="10" height="10" x="-11" y="0" fill="#ebedf0" data-count="0" data-date="2017-12-24"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="12" fill="#ebedf0" data-count="0" data-date="2017-12-25"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="24" fill="#ebedf0" data-count="0" data-date="2017-12-26"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="36" fill="#ebedf0" data-count="0" data-date="2017-12-27"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="48" fill="#ebedf0" data-count="0" data-date="2017-12-28"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="60" fill="#ebedf0" data-count="0" data-date="2017-12-29"/>
+                                    <rect class="day" width="10" height="10" x="-11" y="72" fill="#ebedf0" data-count="0" data-date="2017-12-30"/>
+                                </g>
+                                <g transform="translate(325, 0)">
+                                    <rect class="day" width="10" height="10" x="-12" y="0" fill="#ebedf0" data-count="0" data-date="2017-12-31"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="12" fill="#ebedf0" data-count="0" data-date="2018-01-01"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="24" fill="#ebedf0" data-count="0" data-date="2018-01-02"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="36" fill="#ebedf0" data-count="0" data-date="2018-01-03"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="48" fill="#ebedf0" data-count="0" data-date="2018-01-04"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="60" fill="#ebedf0" data-count="0" data-date="2018-01-05"/>
+                                    <rect class="day" width="10" height="10" x="-12" y="72" fill="#ebedf0" data-count="0" data-date="2018-01-06"/>
+                                </g>
+                                <g transform="translate(338, 0)">
+                                    <rect class="day" width="10" height="10" x="-13" y="0" fill="#ebedf0" data-count="0" data-date="2018-01-07"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="12" fill="#ebedf0" data-count="0" data-date="2018-01-08"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="24" fill="#ebedf0" data-count="0" data-date="2018-01-09"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="36" fill="#ebedf0" data-count="0" data-date="2018-01-10"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="48" fill="#ebedf0" data-count="0" data-date="2018-01-11"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="60" fill="#ebedf0" data-count="0" data-date="2018-01-12"/>
+                                    <rect class="day" width="10" height="10" x="-13" y="72" fill="#ebedf0" data-count="0" data-date="2018-01-13"/>
+                                </g>
+                                <g transform="translate(351, 0)">
+                                    <rect class="day" width="10" height="10" x="-14" y="0" fill="#ebedf0" data-count="0" data-date="2018-01-14"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="12" fill="#ebedf0" data-count="0" data-date="2018-01-15"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="24" fill="#ebedf0" data-count="0" data-date="2018-01-16"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="36" fill="#ebedf0" data-count="0" data-date="2018-01-17"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="48" fill="#ebedf0" data-count="0" data-date="2018-01-18"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="60" fill="#ebedf0" data-count="0" data-date="2018-01-19"/>
+                                    <rect class="day" width="10" height="10" x="-14" y="72" fill="#ebedf0" data-count="0" data-date="2018-01-20"/>
+                                </g>
+                                <g transform="translate(364, 0)">
+                                    <rect class="day" width="10" height="10" x="-15" y="0" fill="#ebedf0" data-count="0" data-date="2018-01-21"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="12" fill="#ebedf0" data-count="0" data-date="2018-01-22"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="24" fill="#ebedf0" data-count="0" data-date="2018-01-23"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="36" fill="#ebedf0" data-count="0" data-date="2018-01-24"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="48" fill="#ebedf0" data-count="0" data-date="2018-01-25"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="60" fill="#ebedf0" data-count="0" data-date="2018-01-26"/>
+                                    <rect class="day" width="10" height="10" x="-15" y="72" fill="#ebedf0" data-count="0" data-date="2018-01-27"/>
+                                </g>
+                                <g transform="translate(377, 0)">
+                                    <rect class="day" width="10" height="10" x="-16" y="0" fill="#ebedf0" data-count="0" data-date="2018-01-28"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="12" fill="#ebedf0" data-count="0" data-date="2018-01-29"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="24" fill="#ebedf0" data-count="0" data-date="2018-01-30"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="36" fill="#ebedf0" data-count="0" data-date="2018-01-31"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-01"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="60" fill="#ebedf0" data-count="0" data-date="2018-02-02"/>
+                                    <rect class="day" width="10" height="10" x="-16" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-03"/>
+                                </g>
+                                <g transform="translate(390, 0)">
+                                    <rect class="day" width="10" height="10" x="-17" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-04"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-05"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-06"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-07"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-08"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="60" fill="#ebedf0" data-count="0" data-date="2018-02-09"/>
+                                    <rect class="day" width="10" height="10" x="-17" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-10"/>
+                                </g>
+                                <g transform="translate(403, 0)">
+                                    <rect class="day" width="10" height="10" x="-18" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-11"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-12"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-13"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-14"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-15"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="60" fill="#ebedf0" data-count="0" data-date="2018-02-16"/>
+                                    <rect class="day" width="10" height="10" x="-18" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-17"/>
+                                </g>
+                                <g transform="translate(416, 0)">
+                                    <rect class="day" width="10" height="10" x="-19" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-18"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="12" fill="#ebedf0" data-count="0" data-date="2018-02-19"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-20"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-21"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="48" fill="#ebedf0" data-count="0" data-date="2018-02-22"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="60" fill="#ebedf0" data-count="0" data-date="2018-02-23"/>
+                                    <rect class="day" width="10" height="10" x="-19" y="72" fill="#ebedf0" data-count="0" data-date="2018-02-24"/>
+                                </g>
+                                <g transform="translate(429, 0)">
+                                    <rect class="day" width="10" height="10" x="-20" y="0" fill="#ebedf0" data-count="0" data-date="2018-02-25"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="12" fill="#c6e48b" data-count="1" data-date="2018-02-26"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="24" fill="#ebedf0" data-count="0" data-date="2018-02-27"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="36" fill="#ebedf0" data-count="0" data-date="2018-02-28"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="48" fill="#ebedf0" data-count="0" data-date="2018-03-01"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="60" fill="#ebedf0" data-count="0" data-date="2018-03-02"/>
+                                    <rect class="day" width="10" height="10" x="-20" y="72" fill="#ebedf0" data-count="0" data-date="2018-03-03"/>
+                                </g>
+                                <g transform="translate(442, 0)">
+                                    <rect class="day" width="10" height="10" x="-21" y="0" fill="#ebedf0" data-count="0" data-date="2018-03-04"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="12" fill="#ebedf0" data-count="0" data-date="2018-03-05"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="24" fill="#ebedf0" data-count="0" data-date="2018-03-06"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="36" fill="#ebedf0" data-count="0" data-date="2018-03-07"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="48" fill="#ebedf0" data-count="0" data-date="2018-03-08"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="60" fill="#ebedf0" data-count="0" data-date="2018-03-09"/>
+                                    <rect class="day" width="10" height="10" x="-21" y="72" fill="#ebedf0" data-count="0" data-date="2018-03-10"/>
+                                </g>
+                                <g transform="translate(455, 0)">
+                                    <rect class="day" width="10" height="10" x="-22" y="0" fill="#ebedf0" data-count="0" data-date="2018-03-11"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="12" fill="#ebedf0" data-count="0" data-date="2018-03-12"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="24" fill="#ebedf0" data-count="0" data-date="2018-03-13"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="36" fill="#ebedf0" data-count="0" data-date="2018-03-14"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="48" fill="#ebedf0" data-count="0" data-date="2018-03-15"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="60" fill="#ebedf0" data-count="0" data-date="2018-03-16"/>
+                                    <rect class="day" width="10" height="10" x="-22" y="72" fill="#ebedf0" data-count="0" data-date="2018-03-17"/>
+                                </g>
+                                <g transform="translate(468, 0)">
+                                    <rect class="day" width="10" height="10" x="-23" y="0" fill="#ebedf0" data-count="0" data-date="2018-03-18"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="12" fill="#ebedf0" data-count="0" data-date="2018-03-19"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="24" fill="#ebedf0" data-count="0" data-date="2018-03-20"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="36" fill="#ebedf0" data-count="0" data-date="2018-03-21"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="48" fill="#ebedf0" data-count="0" data-date="2018-03-22"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="60" fill="#ebedf0" data-count="0" data-date="2018-03-23"/>
+                                    <rect class="day" width="10" height="10" x="-23" y="72" fill="#ebedf0" data-count="0" data-date="2018-03-24"/>
+                                </g>
+                                <g transform="translate(481, 0)">
+                                    <rect class="day" width="10" height="10" x="-24" y="0" fill="#ebedf0" data-count="0" data-date="2018-03-25"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="12" fill="#ebedf0" data-count="0" data-date="2018-03-26"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="24" fill="#ebedf0" data-count="0" data-date="2018-03-27"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="36" fill="#ebedf0" data-count="0" data-date="2018-03-28"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="48" fill="#ebedf0" data-count="0" data-date="2018-03-29"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="60" fill="#ebedf0" data-count="0" data-date="2018-03-30"/>
+                                    <rect class="day" width="10" height="10" x="-24" y="72" fill="#ebedf0" data-count="0" data-date="2018-03-31"/>
+                                </g>
+                                <g transform="translate(494, 0)">
+                                    <rect class="day" width="10" height="10" x="-25" y="0" fill="#ebedf0" data-count="0" data-date="2018-04-01"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="12" fill="#ebedf0" data-count="0" data-date="2018-04-02"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="24" fill="#ebedf0" data-count="0" data-date="2018-04-03"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="36" fill="#ebedf0" data-count="0" data-date="2018-04-04"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="48" fill="#ebedf0" data-count="0" data-date="2018-04-05"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="60" fill="#ebedf0" data-count="0" data-date="2018-04-06"/>
+                                    <rect class="day" width="10" height="10" x="-25" y="72" fill="#ebedf0" data-count="0" data-date="2018-04-07"/>
+                                </g>
+                                <g transform="translate(507, 0)">
+                                    <rect class="day" width="10" height="10" x="-26" y="0" fill="#ebedf0" data-count="0" data-date="2018-04-08"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="12" fill="#ebedf0" data-count="0" data-date="2018-04-09"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="24" fill="#ebedf0" data-count="0" data-date="2018-04-10"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="36" fill="#ebedf0" data-count="0" data-date="2018-04-11"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="48" fill="#ebedf0" data-count="0" data-date="2018-04-12"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="60" fill="#ebedf0" data-count="0" data-date="2018-04-13"/>
+                                    <rect class="day" width="10" height="10" x="-26" y="72" fill="#ebedf0" data-count="0" data-date="2018-04-14"/>
+                                </g>
+                                <g transform="translate(520, 0)">
+                                    <rect class="day" width="10" height="10" x="-27" y="0" fill="#ebedf0" data-count="0" data-date="2018-04-15"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="12" fill="#ebedf0" data-count="0" data-date="2018-04-16"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="24" fill="#ebedf0" data-count="0" data-date="2018-04-17"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="36" fill="#ebedf0" data-count="0" data-date="2018-04-18"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="48" fill="#ebedf0" data-count="0" data-date="2018-04-19"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="60" fill="#ebedf0" data-count="0" data-date="2018-04-20"/>
+                                    <rect class="day" width="10" height="10" x="-27" y="72" fill="#ebedf0" data-count="0" data-date="2018-04-21"/>
+                                </g>
+                                <g transform="translate(533, 0)">
+                                    <rect class="day" width="10" height="10" x="-28" y="0" fill="#ebedf0" data-count="0" data-date="2018-04-22"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="12" fill="#ebedf0" data-count="0" data-date="2018-04-23"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="24" fill="#ebedf0" data-count="0" data-date="2018-04-24"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="36" fill="#ebedf0" data-count="0" data-date="2018-04-25"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="48" fill="#ebedf0" data-count="0" data-date="2018-04-26"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="60" fill="#ebedf0" data-count="0" data-date="2018-04-27"/>
+                                    <rect class="day" width="10" height="10" x="-28" y="72" fill="#ebedf0" data-count="0" data-date="2018-04-28"/>
+                                </g>
+                                <g transform="translate(546, 0)">
+                                    <rect class="day" width="10" height="10" x="-29" y="0" fill="#ebedf0" data-count="0" data-date="2018-04-29"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="12" fill="#ebedf0" data-count="0" data-date="2018-04-30"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="24" fill="#ebedf0" data-count="0" data-date="2018-05-01"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="36" fill="#ebedf0" data-count="0" data-date="2018-05-02"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="48" fill="#ebedf0" data-count="0" data-date="2018-05-03"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="60" fill="#ebedf0" data-count="0" data-date="2018-05-04"/>
+                                    <rect class="day" width="10" height="10" x="-29" y="72" fill="#ebedf0" data-count="0" data-date="2018-05-05"/>
+                                </g>
+                                <g transform="translate(559, 0)">
+                                    <rect class="day" width="10" height="10" x="-30" y="0" fill="#ebedf0" data-count="0" data-date="2018-05-06"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="12" fill="#ebedf0" data-count="0" data-date="2018-05-07"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="24" fill="#ebedf0" data-count="0" data-date="2018-05-08"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="36" fill="#ebedf0" data-count="0" data-date="2018-05-09"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="48" fill="#ebedf0" data-count="0" data-date="2018-05-10"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="60" fill="#ebedf0" data-count="0" data-date="2018-05-11"/>
+                                    <rect class="day" width="10" height="10" x="-30" y="72" fill="#ebedf0" data-count="0" data-date="2018-05-12"/>
+                                </g>
+                                <g transform="translate(572, 0)">
+                                    <rect class="day" width="10" height="10" x="-31" y="0" fill="#ebedf0" data-count="0" data-date="2018-05-13"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="12" fill="#ebedf0" data-count="0" data-date="2018-05-14"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="24" fill="#ebedf0" data-count="0" data-date="2018-05-15"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="36" fill="#ebedf0" data-count="0" data-date="2018-05-16"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="48" fill="#ebedf0" data-count="0" data-date="2018-05-17"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="60" fill="#ebedf0" data-count="0" data-date="2018-05-18"/>
+                                    <rect class="day" width="10" height="10" x="-31" y="72" fill="#ebedf0" data-count="0" data-date="2018-05-19"/>
+                                </g>
+                                <g transform="translate(585, 0)">
+                                    <rect class="day" width="10" height="10" x="-32" y="0" fill="#ebedf0" data-count="0" data-date="2018-05-20"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="12" fill="#ebedf0" data-count="0" data-date="2018-05-21"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="24" fill="#ebedf0" data-count="0" data-date="2018-05-22"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="36" fill="#ebedf0" data-count="0" data-date="2018-05-23"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="48" fill="#ebedf0" data-count="0" data-date="2018-05-24"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="60" fill="#ebedf0" data-count="0" data-date="2018-05-25"/>
+                                    <rect class="day" width="10" height="10" x="-32" y="72" fill="#ebedf0" data-count="0" data-date="2018-05-26"/>
+                                </g>
+                                <g transform="translate(598, 0)">
+                                    <rect class="day" width="10" height="10" x="-33" y="0" fill="#ebedf0" data-count="0" data-date="2018-05-27"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="12" fill="#ebedf0" data-count="0" data-date="2018-05-28"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="24" fill="#ebedf0" data-count="0" data-date="2018-05-29"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="36" fill="#ebedf0" data-count="0" data-date="2018-05-30"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="48" fill="#ebedf0" data-count="0" data-date="2018-05-31"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="60" fill="#c6e48b" data-count="1" data-date="2018-06-01"/>
+                                    <rect class="day" width="10" height="10" x="-33" y="72" fill="#ebedf0" data-count="0" data-date="2018-06-02"/>
+                                </g>
+                                <g transform="translate(611, 0)">
+                                    <rect class="day" width="10" height="10" x="-34" y="0" fill="#ebedf0" data-count="0" data-date="2018-06-03"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="12" fill="#ebedf0" data-count="0" data-date="2018-06-04"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="24" fill="#ebedf0" data-count="0" data-date="2018-06-05"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="36" fill="#ebedf0" data-count="0" data-date="2018-06-06"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="48" fill="#ebedf0" data-count="0" data-date="2018-06-07"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="60" fill="#ebedf0" data-count="0" data-date="2018-06-08"/>
+                                    <rect class="day" width="10" height="10" x="-34" y="72" fill="#ebedf0" data-count="0" data-date="2018-06-09"/>
+                                </g>
+                                <g transform="translate(624, 0)">
+                                    <rect class="day" width="10" height="10" x="-35" y="0" fill="#ebedf0" data-count="0" data-date="2018-06-10"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="12" fill="#ebedf0" data-count="0" data-date="2018-06-11"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="24" fill="#ebedf0" data-count="0" data-date="2018-06-12"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="36" fill="#ebedf0" data-count="0" data-date="2018-06-13"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="48" fill="#ebedf0" data-count="0" data-date="2018-06-14"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="60" fill="#ebedf0" data-count="0" data-date="2018-06-15"/>
+                                    <rect class="day" width="10" height="10" x="-35" y="72" fill="#ebedf0" data-count="0" data-date="2018-06-16"/>
+                                </g>
+                                <g transform="translate(637, 0)">
+                                    <rect class="day" width="10" height="10" x="-36" y="0" fill="#ebedf0" data-count="0" data-date="2018-06-17"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="12" fill="#ebedf0" data-count="0" data-date="2018-06-18"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="24" fill="#ebedf0" data-count="0" data-date="2018-06-19"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="36" fill="#ebedf0" data-count="0" data-date="2018-06-20"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="48" fill="#ebedf0" data-count="0" data-date="2018-06-21"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="60" fill="#ebedf0" data-count="0" data-date="2018-06-22"/>
+                                    <rect class="day" width="10" height="10" x="-36" y="72" fill="#ebedf0" data-count="0" data-date="2018-06-23"/>
+                                </g>
+                                <g transform="translate(650, 0)">
+                                    <rect class="day" width="10" height="10" x="-37" y="0" fill="#ebedf0" data-count="0" data-date="2018-06-24"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="12" fill="#ebedf0" data-count="0" data-date="2018-06-25"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="24" fill="#ebedf0" data-count="0" data-date="2018-06-26"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="36" fill="#ebedf0" data-count="0" data-date="2018-06-27"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="48" fill="#c6e48b" data-count="1" data-date="2018-06-28"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="60" fill="#196127" data-count="8" data-date="2018-06-29"/>
+                                    <rect class="day" width="10" height="10" x="-37" y="72" fill="#c6e48b" data-count="1" data-date="2018-06-30"/>
+                                </g>
+                                <g transform="translate(663, 0)">
+                                    <rect class="day" width="10" height="10" x="-38" y="0" fill="#ebedf0" data-count="0" data-date="2018-07-01"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="12" fill="#ebedf0" data-count="0" data-date="2018-07-02"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="24" fill="#ebedf0" data-count="0" data-date="2018-07-03"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="36" fill="#ebedf0" data-count="0" data-date="2018-07-04"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="48" fill="#ebedf0" data-count="0" data-date="2018-07-05"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="60" fill="#ebedf0" data-count="0" data-date="2018-07-06"/>
+                                    <rect class="day" width="10" height="10" x="-38" y="72" fill="#ebedf0" data-count="0" data-date="2018-07-07"/>
+                                </g>
+                                <g transform="translate(676, 0)">
+                                    <rect class="day" width="10" height="10" x="-39" y="0" fill="#ebedf0" data-count="0" data-date="2018-07-08"/>
+                                    <rect class="day" width="10" height="10" x="-39" y="12" fill="#196127" data-count="6" data-date="2018-07-09"/>
+                                    <rect class="day" width="10" height="10" x="-39" y="24" fill="#7bc96f" data-count="2" data-date="2018-07-10"/>
+                                    <rect class="day" width="10" height="10" x="-39" y="36" fill="#ebedf0" data-count="0" data-date="2018-07-11"/>
+                                </g>
+                                <text x="13" y="-10" class="month">Jul</text>
+                                <text x="61" y="-10" class="month">Aug</text>
+                                <text x="109" y="-10" class="month">Sep</text>
+                                <text x="157" y="-10" class="month">Oct</text>
+                                <text x="217" y="-10" class="month">Nov</text>
+                                <text x="265" y="-10" class="month">Dec</text>
+                                <text x="325" y="-10" class="month">Jan</text>
+                                <text x="373" y="-10" class="month">Feb</text>
+                                <text x="421" y="-10" class="month">Mar</text>
+                                <text x="469" y="-10" class="month">Apr</text>
+                                <text x="529" y="-10" class="month">May</text>
+                                <text x="577" y="-10" class="month">Jun</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="8" style="display: none;">Sun</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="20">Mon</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="32" style="display: none;">Tue</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="44">Wed</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="57" style="display: none;">Thu</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="69">Fri</text>
+                              <text text-anchor="start" class="wday" dx="-22" dy="81" style="display: none;">Sat</text>
+                            </g>
+                          </svg>
+                          <div class="row">
+                            <div class="calendarLearn col-5 pl-4">
+                              <a href="#">Learn how we count contributions.</a>
+                            </div>
+                            <div class="marker col-4 p-0 ml-5">
+                              <ul class="legend ">
+                                    <li style="display: inline-block;">Less</li>
+                                    <li style="background-color: #eee; height:15px; width:15px;display: inline-block;"></li>
+                                    <li style="background-color: #c6e48b;height:15px; width:15px;display: inline-block;"></li>
+                                    <li style="background-color: #7bc96f;height:15px; width:15px;display: inline-block;"></li>
+                                    <li style="background-color: #239a3b;height:15px; width:15px;display: inline-block;"></li>
+                                    <li style="background-color: #196127;height:15px; width:15px;display: inline-block;"></li>
+                                    <li style="display: inline-block;">More</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="contrib-act ml-2 mt-5">
+                          <div class="row justify-content-between">
+                            <div class="contribution col-9 row justify-content-between">
+                              <span>Contribution activity</span>
+                              <div class="dropdown">
+                                  <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Jump to
+                                    </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                  </div>
+                              </div>
+                              <div class="month-act col-12">
+                                <span class="july2018">July 2018</span>
+                                <div class="commits mt-3 pl-5 pb-3 pt-3">
+                                  <h5>Created 2 commits it repository</h5>
+                                  <a href="#">AndrewTi/ssr-node.js</a>
+                                </div>
+                                <hr>
+                                <div class="commits pl-5  pb-3 pt-3 ">
+                                    <h5>Created 2 commits it repository</h5>
+                                    <a href="#">AndrewTi/ssr-node.js</a>
+                                </div>
+                                <hr>
+                                <div class="commits pl-5  pb-3 pt-3 ">
+                                    <h5>Created 2 commits it repository</h5>
+                                    <a href="#">AndrewTi/ssr-node.js</a>
+                                </div>
+                                <button type="button" class="btn btn-light btn-lg btn-block">Show more activity</button>
+                              </div>
+                            </div>
+                            <sidebar class="col-3">
+                                <ul class="nav flex-column nav-pills">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="#">2018</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">2017</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">2016</a>
+                                    </li>
+                                  </ul>
+                            </sidebar>     
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <hr>
+            <div class="container d-flex justify-content-around">
+            <div class="left">
+                <span>© 2018 GitHub, Inc.</span>
+                <a href="#">Help</a>
+                <a href="#">Status</a>
+                <a href="#">Terms</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="center">
+                <img src="https://static.filehorse.com/icons-web/developer-tools/github-icon-32.png" alt=""> 
+           </div>
+            <div class="right">
+                <a href="#">Help</a>
+                <a href="#">Status</a>
+                <a href="#">Terms</a>
+                <a href="#">Help</a>
+            </div>
           </div>
-            <form action="#" class="col s4">
-            <input type="search col s12">
-          </form>
-          <ul id="nav-mobile" class="right hide-on-med-and-down  col s6">
-            <li><a href="#">Sass</a></li>
-            <li><a href="#">Components</a></li>
-            <li><a href="#">JavaScript</a></li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-
-
-      <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>  
- </body>
-</html>
+          </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      </body>
+    </html>
