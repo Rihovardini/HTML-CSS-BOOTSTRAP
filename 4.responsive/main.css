@@ -46,7 +46,7 @@ main div:nth-child(2){
     body {
         background-color: lightblue;
     }
-
+    
     main div:last-child{
         display: none;
     }
@@ -61,6 +61,10 @@ main div:nth-child(2){
         background-color: forestgreen;
     }
 
+    h1{
+        text-align:center;
+    }
+    
     main div{
         width: 100%;
     }
