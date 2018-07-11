@@ -1,26 +1,3 @@
-.lights{
-  text-align: center;
-  height:100px;
-  width: 100%;
-  position: absolute;
-  top:-80px;
-  border-bottom: 1px solid black;
-  white-space: nowrap;
-  padding: 0;
-}
-.lights li{
-  display: inline-block;
-  top:102px;
-  width: 15px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: blueviolet;
-  margin: 0 15px;
-  position: relative;
-}
-
-
-
 .bounce{
     text-align: center;
     animation: head 1s  forwards infinite;
